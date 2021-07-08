@@ -1,66 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.4 on win32)" generated="20210708 12:45:02.162" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.9.4 on win32)" generated="20210708 12:51:42.801" rpa="false" schemaversion="2">
 <suite id="s1" name="Selenium2 Tests" source="D:\B-Mine\Company\Company\Harman2\RobotProject\Selenium Suite\selenium2_tests.robot">
 <test id="s1-t1" name="TC2">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20210708 12:45:02.466" level="INFO">Environment variable 'Path' set to value 'D:\B-Mine\Company\Company\Harman2\RobotProject\venv\Scripts;C:\Program Files\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools;C:\Users\JiDi\AppData\Local\Android\Sdk\emulator;C:\Program Files\nodejs\;C:\Components\Maven\apache-maven-3.6.3\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\Program Files\Python39\Scripts;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.11\bin;C:\Components\CSharp\NUnit.Console-3.12.0\bin\netcoreapp3.1;C:\Users\JiDi\AppData\Roaming\npm;C:\Users\JiDi\AppData\Local\Microsoft\WindowsApps1;C:\Users\JiDi\.dotnet\tools;C:\Users\JiDi\AppData\Local\Programs\Microsoft VS Code\bin;;D:\B-Mine\Company\Company\Harman2\RobotProject\driver'.</msg>
-<status status="PASS" starttime="20210708 12:45:02.465" endtime="20210708 12:45:02.466"/>
+<msg timestamp="20210708 12:51:43.128" level="INFO">Environment variable 'Path' set to value 'D:\B-Mine\Company\Company\Harman2\RobotProject\venv\Scripts;C:\Program Files\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\JiDi\AppData\Local\Android\Sdk\platform-tools;C:\Users\JiDi\AppData\Local\Android\Sdk\emulator;C:\Program Files\nodejs\;C:\Components\Maven\apache-maven-3.6.3\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\Program Files\Python39\Scripts;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.11\bin;C:\Components\CSharp\NUnit.Console-3.12.0\bin\netcoreapp3.1;C:\Users\JiDi\AppData\Roaming\npm;C:\Users\JiDi\AppData\Local\Microsoft\WindowsApps1;C:\Users\JiDi\.dotnet\tools;C:\Users\JiDi\AppData\Local\Programs\Microsoft VS Code\bin;;D:\B-Mine\Company\Company\Harman2\RobotProject\driver'.</msg>
+<status status="PASS" starttime="20210708 12:51:43.127" endtime="20210708 12:51:43.128"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210708 12:45:02.466" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
-<status status="PASS" starttime="20210708 12:45:02.466" endtime="20210708 12:45:04.061"/>
+<msg timestamp="20210708 12:51:43.128" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
+<status status="PASS" starttime="20210708 12:51:43.128" endtime="20210708 12:51:44.107"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210708 12:45:04.078" endtime="20210708 12:45:04.214"/>
+<status status="PASS" starttime="20210708 12:51:44.115" endtime="20210708 12:51:44.250"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=https://datatables.net/extensions/select/examples/initialisation/checkbox.html</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210708 12:45:04.215" level="INFO">Opening url 'https://datatables.net/extensions/select/examples/initialisation/checkbox.html'</msg>
-<status status="PASS" starttime="20210708 12:45:04.215" endtime="20210708 12:45:07.688"/>
+<msg timestamp="20210708 12:51:44.251" level="INFO">Opening url 'https://datatables.net/extensions/select/examples/initialisation/checkbox.html'</msg>
+<status status="PASS" starttime="20210708 12:51:44.250" endtime="20210708 12:51:48.015"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210708 12:45:07.688" endtime="20210708 12:45:07.693"/>
+<status status="PASS" starttime="20210708 12:51:48.017" endtime="20210708 12:51:48.019"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=example_length</arg>
+<arg>25</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20210708 12:51:48.021" level="INFO">Selecting options from selection list 'name=example_length' by label 25.</msg>
+<status status="PASS" starttime="20210708 12:51:48.020" endtime="20210708 12:51:48.165"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rowcount}</var>
+<arg>xpath=//table[@id='example']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20210708 12:51:48.192" level="INFO">${rowcount} = 25</msg>
+<status status="PASS" starttime="20210708 12:51:48.165" endtime="20210708 12:51:48.192"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rowcount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:48.193" endtime="20210708 12:51:48.194"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
 <value>1</value>
-<value>11</value>
+<value>${rowcount}+1</value>
 <iter>
 <var name="${i}">1</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:07.779" level="INFO">${name} = Airi Satou</msg>
-<status status="PASS" starttime="20210708 12:45:07.694" endtime="20210708 12:45:07.779"/>
+<msg timestamp="20210708 12:51:48.226" level="INFO">${name} = Airi Satou</msg>
+<status status="PASS" starttime="20210708 12:51:48.195" endtime="20210708 12:51:48.226"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:07.780" endtime="20210708 12:45:07.780"/>
+<status status="PASS" starttime="20210708 12:51:48.227" endtime="20210708 12:51:48.227"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.039" level="INFO">${age} = 33</msg>
-<status status="PASS" starttime="20210708 12:45:07.781" endtime="20210708 12:45:08.039"/>
+<msg timestamp="20210708 12:51:48.253" level="INFO">${age} = 33</msg>
+<status status="PASS" starttime="20210708 12:51:48.227" endtime="20210708 12:51:48.253"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.039" endtime="20210708 12:45:08.061"/>
+<status status="PASS" starttime="20210708 12:51:48.253" endtime="20210708 12:51:48.254"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:07.694" endtime="20210708 12:45:08.062"/>
+<status status="PASS" starttime="20210708 12:51:48.195" endtime="20210708 12:51:48.254"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -68,27 +87,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.144" level="INFO">${name} = Angelica Ramos</msg>
-<status status="PASS" starttime="20210708 12:45:08.062" endtime="20210708 12:45:08.144"/>
+<msg timestamp="20210708 12:51:48.286" level="INFO">${name} = Angelica Ramos</msg>
+<status status="PASS" starttime="20210708 12:51:48.254" endtime="20210708 12:51:48.286"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.144" endtime="20210708 12:45:08.145"/>
+<status status="PASS" starttime="20210708 12:51:48.287" endtime="20210708 12:51:48.287"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.235" level="INFO">${age} = 47</msg>
-<status status="PASS" starttime="20210708 12:45:08.146" endtime="20210708 12:45:08.235"/>
+<msg timestamp="20210708 12:51:48.315" level="INFO">${age} = 47</msg>
+<status status="PASS" starttime="20210708 12:51:48.287" endtime="20210708 12:51:48.315"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.235" endtime="20210708 12:45:08.236"/>
+<status status="PASS" starttime="20210708 12:51:48.315" endtime="20210708 12:51:48.315"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.062" endtime="20210708 12:45:08.236"/>
+<status status="PASS" starttime="20210708 12:51:48.254" endtime="20210708 12:51:48.315"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -96,27 +115,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.288" level="INFO">${name} = Ashton Cox</msg>
-<status status="PASS" starttime="20210708 12:45:08.236" endtime="20210708 12:45:08.288"/>
+<msg timestamp="20210708 12:51:48.344" level="INFO">${name} = Ashton Cox</msg>
+<status status="PASS" starttime="20210708 12:51:48.316" endtime="20210708 12:51:48.345"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.288" endtime="20210708 12:45:08.289"/>
+<status status="PASS" starttime="20210708 12:51:48.345" endtime="20210708 12:51:48.345"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.343" level="INFO">${age} = 66</msg>
-<status status="PASS" starttime="20210708 12:45:08.289" endtime="20210708 12:45:08.343"/>
+<msg timestamp="20210708 12:51:48.372" level="INFO">${age} = 66</msg>
+<status status="PASS" starttime="20210708 12:51:48.345" endtime="20210708 12:51:48.372"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.343" endtime="20210708 12:45:08.343"/>
+<status status="PASS" starttime="20210708 12:51:48.372" endtime="20210708 12:51:48.373"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.236" endtime="20210708 12:45:08.343"/>
+<status status="PASS" starttime="20210708 12:51:48.315" endtime="20210708 12:51:48.373"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -124,27 +143,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.383" level="INFO">${name} = Bradley Greer</msg>
-<status status="PASS" starttime="20210708 12:45:08.344" endtime="20210708 12:45:08.383"/>
+<msg timestamp="20210708 12:51:48.405" level="INFO">${name} = Bradley Greer</msg>
+<status status="PASS" starttime="20210708 12:51:48.373" endtime="20210708 12:51:48.406"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.383" endtime="20210708 12:45:08.384"/>
+<status status="PASS" starttime="20210708 12:51:48.406" endtime="20210708 12:51:48.406"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.433" level="INFO">${age} = 41</msg>
-<status status="PASS" starttime="20210708 12:45:08.384" endtime="20210708 12:45:08.433"/>
+<msg timestamp="20210708 12:51:48.434" level="INFO">${age} = 41</msg>
+<status status="PASS" starttime="20210708 12:51:48.407" endtime="20210708 12:51:48.434"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.434" endtime="20210708 12:45:08.434"/>
+<status status="PASS" starttime="20210708 12:51:48.434" endtime="20210708 12:51:48.434"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.344" endtime="20210708 12:45:08.434"/>
+<status status="PASS" starttime="20210708 12:51:48.373" endtime="20210708 12:51:48.434"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -152,27 +171,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.495" level="INFO">${name} = Brenden Wagner</msg>
-<status status="PASS" starttime="20210708 12:45:08.435" endtime="20210708 12:45:08.495"/>
+<msg timestamp="20210708 12:51:48.462" level="INFO">${name} = Brenden Wagner</msg>
+<status status="PASS" starttime="20210708 12:51:48.435" endtime="20210708 12:51:48.462"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.496" endtime="20210708 12:45:08.496"/>
+<status status="PASS" starttime="20210708 12:51:48.462" endtime="20210708 12:51:48.463"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.556" level="INFO">${age} = 28</msg>
-<status status="PASS" starttime="20210708 12:45:08.497" endtime="20210708 12:45:08.556"/>
+<msg timestamp="20210708 12:51:48.490" level="INFO">${age} = 28</msg>
+<status status="PASS" starttime="20210708 12:51:48.463" endtime="20210708 12:51:48.491"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.556" endtime="20210708 12:45:08.558"/>
+<status status="PASS" starttime="20210708 12:51:48.491" endtime="20210708 12:51:48.491"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.434" endtime="20210708 12:45:08.558"/>
+<status status="PASS" starttime="20210708 12:51:48.435" endtime="20210708 12:51:48.491"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -180,27 +199,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.634" level="INFO">${name} = Brielle Williamson</msg>
-<status status="PASS" starttime="20210708 12:45:08.559" endtime="20210708 12:45:08.634"/>
+<msg timestamp="20210708 12:51:48.522" level="INFO">${name} = Brielle Williamson</msg>
+<status status="PASS" starttime="20210708 12:51:48.492" endtime="20210708 12:51:48.522"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.634" endtime="20210708 12:45:08.636"/>
+<status status="PASS" starttime="20210708 12:51:48.522" endtime="20210708 12:51:48.523"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.698" level="INFO">${age} = 61</msg>
-<status status="PASS" starttime="20210708 12:45:08.637" endtime="20210708 12:45:08.698"/>
+<msg timestamp="20210708 12:51:48.555" level="INFO">${age} = 61</msg>
+<status status="PASS" starttime="20210708 12:51:48.523" endtime="20210708 12:51:48.555"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.698" endtime="20210708 12:45:08.703"/>
+<status status="PASS" starttime="20210708 12:51:48.555" endtime="20210708 12:51:48.556"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.558" endtime="20210708 12:45:08.703"/>
+<status status="PASS" starttime="20210708 12:51:48.491" endtime="20210708 12:51:48.556"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -208,27 +227,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.776" level="INFO">${name} = Bruno Nash</msg>
-<status status="PASS" starttime="20210708 12:45:08.703" endtime="20210708 12:45:08.776"/>
+<msg timestamp="20210708 12:51:48.607" level="INFO">${name} = Bruno Nash</msg>
+<status status="PASS" starttime="20210708 12:51:48.557" endtime="20210708 12:51:48.607"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.776" endtime="20210708 12:45:08.777"/>
+<status status="PASS" starttime="20210708 12:51:48.607" endtime="20210708 12:51:48.609"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.836" level="INFO">${age} = 38</msg>
-<status status="PASS" starttime="20210708 12:45:08.777" endtime="20210708 12:45:08.836"/>
+<msg timestamp="20210708 12:51:48.637" level="INFO">${age} = 38</msg>
+<status status="PASS" starttime="20210708 12:51:48.609" endtime="20210708 12:51:48.637"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.836" endtime="20210708 12:45:08.837"/>
+<status status="PASS" starttime="20210708 12:51:48.638" endtime="20210708 12:51:48.638"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.703" endtime="20210708 12:45:08.837"/>
+<status status="PASS" starttime="20210708 12:51:48.556" endtime="20210708 12:51:48.638"/>
 </iter>
 <iter>
 <var name="${i}">8</var>
@@ -236,27 +255,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.892" level="INFO">${name} = Caesar Vance</msg>
-<status status="PASS" starttime="20210708 12:45:08.837" endtime="20210708 12:45:08.892"/>
+<msg timestamp="20210708 12:51:48.671" level="INFO">${name} = Caesar Vance</msg>
+<status status="PASS" starttime="20210708 12:51:48.639" endtime="20210708 12:51:48.671"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.892" endtime="20210708 12:45:08.893"/>
+<status status="PASS" starttime="20210708 12:51:48.671" endtime="20210708 12:51:48.672"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.946" level="INFO">${age} = 21</msg>
-<status status="PASS" starttime="20210708 12:45:08.894" endtime="20210708 12:45:08.946"/>
+<msg timestamp="20210708 12:51:48.698" level="INFO">${age} = 21</msg>
+<status status="PASS" starttime="20210708 12:51:48.672" endtime="20210708 12:51:48.698"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.946" endtime="20210708 12:45:08.948"/>
+<status status="PASS" starttime="20210708 12:51:48.699" endtime="20210708 12:51:48.699"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.837" endtime="20210708 12:45:08.948"/>
+<status status="PASS" starttime="20210708 12:51:48.638" endtime="20210708 12:51:48.699"/>
 </iter>
 <iter>
 <var name="${i}">9</var>
@@ -264,27 +283,27 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:08.995" level="INFO">${name} = Cara Stevens</msg>
-<status status="PASS" starttime="20210708 12:45:08.949" endtime="20210708 12:45:08.995"/>
+<msg timestamp="20210708 12:51:48.725" level="INFO">${name} = Cara Stevens</msg>
+<status status="PASS" starttime="20210708 12:51:48.699" endtime="20210708 12:51:48.725"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:08.995" endtime="20210708 12:45:08.996"/>
+<status status="PASS" starttime="20210708 12:51:48.726" endtime="20210708 12:51:48.726"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:09.044" level="INFO">${age} = 46</msg>
-<status status="PASS" starttime="20210708 12:45:08.997" endtime="20210708 12:45:09.044"/>
+<msg timestamp="20210708 12:51:48.753" level="INFO">${age} = 46</msg>
+<status status="PASS" starttime="20210708 12:51:48.726" endtime="20210708 12:51:48.753"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:09.044" endtime="20210708 12:45:09.045"/>
+<status status="PASS" starttime="20210708 12:51:48.753" endtime="20210708 12:51:48.754"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:08.948" endtime="20210708 12:45:09.045"/>
+<status status="PASS" starttime="20210708 12:51:48.699" endtime="20210708 12:51:48.754"/>
 </iter>
 <iter>
 <var name="${i}">10</var>
@@ -292,33 +311,453 @@
 <var>${name}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:09.082" level="INFO">${name} = Cedric Kelly</msg>
-<status status="PASS" starttime="20210708 12:45:09.046" endtime="20210708 12:45:09.082"/>
+<msg timestamp="20210708 12:51:48.792" level="INFO">${name} = Cedric Kelly</msg>
+<status status="PASS" starttime="20210708 12:51:48.754" endtime="20210708 12:51:48.792"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:09.083" endtime="20210708 12:45:09.084"/>
+<status status="PASS" starttime="20210708 12:51:48.793" endtime="20210708 12:51:48.793"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${age}</var>
 <arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210708 12:45:09.125" level="INFO">${age} = 22</msg>
-<status status="PASS" starttime="20210708 12:45:09.084" endtime="20210708 12:45:09.125"/>
+<msg timestamp="20210708 12:51:48.820" level="INFO">${age} = 22</msg>
+<status status="PASS" starttime="20210708 12:51:48.794" endtime="20210708 12:51:48.820"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${age}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 12:45:09.125" endtime="20210708 12:45:09.126"/>
+<status status="PASS" starttime="20210708 12:51:48.821" endtime="20210708 12:51:48.821"/>
 </kw>
-<status status="PASS" starttime="20210708 12:45:09.046" endtime="20210708 12:45:09.126"/>
+<status status="PASS" starttime="20210708 12:51:48.754" endtime="20210708 12:51:48.821"/>
 </iter>
-<status status="PASS" starttime="20210708 12:45:07.693" endtime="20210708 12:45:09.126"/>
+<iter>
+<var name="${i}">11</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:48.846" level="INFO">${name} = Charde Marshall</msg>
+<status status="PASS" starttime="20210708 12:51:48.821" endtime="20210708 12:51:48.846"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:48.847" endtime="20210708 12:51:48.847"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:48.884" level="INFO">${age} = 36</msg>
+<status status="PASS" starttime="20210708 12:51:48.848" endtime="20210708 12:51:48.884"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:48.884" endtime="20210708 12:51:48.885"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:48.821" endtime="20210708 12:51:48.885"/>
+</iter>
+<iter>
+<var name="${i}">12</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:48.915" level="INFO">${name} = Colleen Hurst</msg>
+<status status="PASS" starttime="20210708 12:51:48.885" endtime="20210708 12:51:48.915"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:48.915" endtime="20210708 12:51:48.916"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:48.941" level="INFO">${age} = 39</msg>
+<status status="PASS" starttime="20210708 12:51:48.916" endtime="20210708 12:51:48.941"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:48.942" endtime="20210708 12:51:48.942"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:48.885" endtime="20210708 12:51:48.942"/>
+</iter>
+<iter>
+<var name="${i}">13</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:48.968" level="INFO">${name} = Dai Rios</msg>
+<status status="PASS" starttime="20210708 12:51:48.943" endtime="20210708 12:51:48.968"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:48.969" endtime="20210708 12:51:48.969"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.000" level="INFO">${age} = 35</msg>
+<status status="PASS" starttime="20210708 12:51:48.969" endtime="20210708 12:51:49.000"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.000" endtime="20210708 12:51:49.000"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:48.942" endtime="20210708 12:51:49.000"/>
+</iter>
+<iter>
+<var name="${i}">14</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.038" level="INFO">${name} = Donna Snider</msg>
+<status status="PASS" starttime="20210708 12:51:49.001" endtime="20210708 12:51:49.038"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.038" endtime="20210708 12:51:49.039"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.063" level="INFO">${age} = 27</msg>
+<status status="PASS" starttime="20210708 12:51:49.039" endtime="20210708 12:51:49.063"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.063" endtime="20210708 12:51:49.063"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.000" endtime="20210708 12:51:49.064"/>
+</iter>
+<iter>
+<var name="${i}">15</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.094" level="INFO">${name} = Doris Wilder</msg>
+<status status="PASS" starttime="20210708 12:51:49.064" endtime="20210708 12:51:49.094"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.095" endtime="20210708 12:51:49.095"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.125" level="INFO">${age} = 23</msg>
+<status status="PASS" starttime="20210708 12:51:49.095" endtime="20210708 12:51:49.126"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.126" endtime="20210708 12:51:49.126"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.064" endtime="20210708 12:51:49.127"/>
+</iter>
+<iter>
+<var name="${i}">16</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.153" level="INFO">${name} = Finn Camacho</msg>
+<status status="PASS" starttime="20210708 12:51:49.127" endtime="20210708 12:51:49.153"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.153" endtime="20210708 12:51:49.154"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.187" level="INFO">${age} = 47</msg>
+<status status="PASS" starttime="20210708 12:51:49.154" endtime="20210708 12:51:49.187"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.187" endtime="20210708 12:51:49.188"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.127" endtime="20210708 12:51:49.188"/>
+</iter>
+<iter>
+<var name="${i}">17</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.216" level="INFO">${name} = Fiona Green</msg>
+<status status="PASS" starttime="20210708 12:51:49.189" endtime="20210708 12:51:49.216"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.216" endtime="20210708 12:51:49.216"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.241" level="INFO">${age} = 48</msg>
+<status status="PASS" starttime="20210708 12:51:49.217" endtime="20210708 12:51:49.242"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.242" endtime="20210708 12:51:49.242"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.189" endtime="20210708 12:51:49.242"/>
+</iter>
+<iter>
+<var name="${i}">18</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.269" level="INFO">${name} = Garrett Winters</msg>
+<status status="PASS" starttime="20210708 12:51:49.243" endtime="20210708 12:51:49.269"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.269" endtime="20210708 12:51:49.270"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.303" level="INFO">${age} = 63</msg>
+<status status="PASS" starttime="20210708 12:51:49.270" endtime="20210708 12:51:49.303"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.303" endtime="20210708 12:51:49.305"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.242" endtime="20210708 12:51:49.305"/>
+</iter>
+<iter>
+<var name="${i}">19</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.333" level="INFO">${name} = Gavin Cortez</msg>
+<status status="PASS" starttime="20210708 12:51:49.305" endtime="20210708 12:51:49.333"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.334" endtime="20210708 12:51:49.334"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.360" level="INFO">${age} = 22</msg>
+<status status="PASS" starttime="20210708 12:51:49.334" endtime="20210708 12:51:49.360"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.360" endtime="20210708 12:51:49.360"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.305" endtime="20210708 12:51:49.361"/>
+</iter>
+<iter>
+<var name="${i}">20</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.393" level="INFO">${name} = Gavin Joyce</msg>
+<status status="PASS" starttime="20210708 12:51:49.361" endtime="20210708 12:51:49.393"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.393" endtime="20210708 12:51:49.394"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.431" level="INFO">${age} = 42</msg>
+<status status="PASS" starttime="20210708 12:51:49.394" endtime="20210708 12:51:49.431"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.431" endtime="20210708 12:51:49.432"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.361" endtime="20210708 12:51:49.432"/>
+</iter>
+<iter>
+<var name="${i}">21</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.470" level="INFO">${name} = Gloria Little</msg>
+<status status="PASS" starttime="20210708 12:51:49.432" endtime="20210708 12:51:49.470"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.470" endtime="20210708 12:51:49.471"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.507" level="INFO">${age} = 59</msg>
+<status status="PASS" starttime="20210708 12:51:49.471" endtime="20210708 12:51:49.507"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.507" endtime="20210708 12:51:49.508"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.432" endtime="20210708 12:51:49.508"/>
+</iter>
+<iter>
+<var name="${i}">22</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.550" level="INFO">${name} = Haley Kennedy</msg>
+<status status="PASS" starttime="20210708 12:51:49.509" endtime="20210708 12:51:49.550"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.550" endtime="20210708 12:51:49.551"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.594" level="INFO">${age} = 43</msg>
+<status status="PASS" starttime="20210708 12:51:49.551" endtime="20210708 12:51:49.594"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.594" endtime="20210708 12:51:49.595"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.508" endtime="20210708 12:51:49.595"/>
+</iter>
+<iter>
+<var name="${i}">23</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.634" level="INFO">${name} = Hermione Butler</msg>
+<status status="PASS" starttime="20210708 12:51:49.596" endtime="20210708 12:51:49.634"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.634" endtime="20210708 12:51:49.635"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.678" level="INFO">${age} = 47</msg>
+<status status="PASS" starttime="20210708 12:51:49.635" endtime="20210708 12:51:49.678"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.678" endtime="20210708 12:51:49.679"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.596" endtime="20210708 12:51:49.679"/>
+</iter>
+<iter>
+<var name="${i}">24</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.713" level="INFO">${name} = Herrod Chandler</msg>
+<status status="PASS" starttime="20210708 12:51:49.679" endtime="20210708 12:51:49.713"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.714" endtime="20210708 12:51:49.714"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.751" level="INFO">${age} = 59</msg>
+<status status="PASS" starttime="20210708 12:51:49.715" endtime="20210708 12:51:49.751"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.751" endtime="20210708 12:51:49.752"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.679" endtime="20210708 12:51:49.752"/>
+</iter>
+<iter>
+<var name="${i}">25</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.802" level="INFO">${name} = Hope Fuentes</msg>
+<status status="PASS" starttime="20210708 12:51:49.752" endtime="20210708 12:51:49.802"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.802" endtime="20210708 12:51:49.803"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${age}</var>
+<arg>xpath=//table[@id='example']/tbody/tr[${i}]/td[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210708 12:51:49.838" level="INFO">${age} = 41</msg>
+<status status="PASS" starttime="20210708 12:51:49.803" endtime="20210708 12:51:49.838"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210708 12:51:49.838" endtime="20210708 12:51:49.839"/>
+</kw>
+<status status="PASS" starttime="20210708 12:51:49.752" endtime="20210708 12:51:49.839"/>
+</iter>
+<status status="PASS" starttime="20210708 12:51:48.195" endtime="20210708 12:51:49.839"/>
 </for>
-<status status="PASS" starttime="20210708 12:45:02.464" endtime="20210708 12:45:09.127"/>
+<status status="PASS" starttime="20210708 12:51:43.126" endtime="20210708 12:51:49.840"/>
 </test>
-<status status="PASS" starttime="20210708 12:45:02.164" endtime="20210708 12:45:09.132"/>
+<status status="PASS" starttime="20210708 12:51:42.804" endtime="20210708 12:51:49.843"/>
 </suite>
 <statistics>
 <total>

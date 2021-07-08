@@ -23,9 +23,13 @@ TC2
     Maximize Browser Window
     Go To    url=https://datatables.net/extensions/select/examples/initialisation/checkbox.html
     Set Selenium Implicit Wait    30s
+    Select From List By Label    name=example_length    25
+    
+    ${rowcount}     Get Element Count    xpath=//table[@id='example']/tbody/tr
+    Log To Console    ${rowcount}
 
-#    1 to 10
-    FOR    ${i}    IN RANGE    1    11
+    #    1 to 10
+    FOR    ${i}    IN RANGE    1    ${rowcount}+1
         ${name}    Get Text    xpath=//table[@id='example']/tbody/tr[${i}]/td[2]
         Log To Console    ${name}
 
