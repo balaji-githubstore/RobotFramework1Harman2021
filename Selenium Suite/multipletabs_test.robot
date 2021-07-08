@@ -10,11 +10,17 @@ TC1 Multiple Tabs
     Go To    https://www.db4free.net/
     Set Selenium Implicit Wait    30s
     Click Element    //b[contains(text(),'phpMy')]
-    
-    ${url}      Get Location
-    Log To Console    ${url}
+    Switch Window    NEW
+    Select From List By Label    id=sel-lang    English (United Kingdom)
+    Input Text    id=input_username    admin
+    Input Password    id=input_password    pass123
+    Click Element    id=input_go
+#    get and print the Cannot log in to the MySQL server
+#    Switch Window      MAIN
 
-    Close Window
+
+
+
 
 
 
