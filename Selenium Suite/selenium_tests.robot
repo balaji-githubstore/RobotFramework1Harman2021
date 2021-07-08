@@ -83,6 +83,7 @@ TC5 OpenEMR Add patient
     #by default alert will be accepted
     ${alerttext}  Handle Alert      action=ACCEPT    timeout=50s
     Log To Console    ${alerttext}
+
     Click Element    class=closeDlgIframe
 
     Select Frame    xpath=//iframe[@name='pat']
