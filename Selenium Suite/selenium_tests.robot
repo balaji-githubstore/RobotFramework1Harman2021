@@ -80,10 +80,10 @@ TC5 OpenEMR Add patient
     Select Frame    xpath=//iframe[@id='modalframe']
     Click Element    xpath=//input[@value='Confirm Create New Patient']
     Unselect Frame
+
     #by default alert will be accepted
     ${alerttext}  Handle Alert      action=ACCEPT    timeout=50s
     Log To Console    ${alerttext}
-
     Click Element    class=closeDlgIframe
 
     Select Frame    xpath=//iframe[@name='pat']
