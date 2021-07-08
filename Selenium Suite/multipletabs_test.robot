@@ -16,8 +16,18 @@ TC1 Multiple Tabs
     Input Password    id=input_password    pass123
     Click Element    id=input_go
 #    get and print the Cannot log in to the MySQL server
-#    Switch Window      MAIN
+    ${actualtext}   Get Text    xpath=(//div[@role='alert'])[2]
+    Log To Console    ${actualtext}
+    Log    ${actualtext}
+    Switch Window      MAIN
+    Title Should Be    db4free.net - MySQL Database for free
 
+    ${actualtext}     Get Text    class=col-sm-9
+    Log To Console    ${actualtext}
+    Switch Window    phpMyAdmin
+    Input Text    id=input_username    admin
+    Input Password    id=input_password    pass123
+    Click Element    id=input_go
 
 
 
