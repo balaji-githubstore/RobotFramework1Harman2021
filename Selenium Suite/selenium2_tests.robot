@@ -107,6 +107,11 @@ TC5
     Log To Console    ${text}
     ${text}     Fetch From Right    ${text}     of
     Log To Console    ${text}
-    
+    Table Should Contain    xpath=//table[@id='example']    Brenden Wagner
+    ${cellvalue}    Get Table Cell    xpath=//table[@id='example']    2    2
+    Log To Console    ${cellvalue}
+    Table Cell Should Contain    xpath=//table[@id='example']    3    2    Angelica Ramos123
+    Table Row Should Contain    xpath=//table[@id='example']    3    Angelica Ramos
+    Table Row Should Contain    xpath=//table[@id='example']    3    London
 #    Click Element    month
 #    Click Element    april
