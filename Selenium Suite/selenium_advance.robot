@@ -10,13 +10,15 @@ Library    String
 #    Maximize Browser Window
 #    Go To    https://atozgrocery.in/my-account/
 #    Set Selenium Implicit Wait    30s
-#    Execute Javascript  document.querySelector("[id='email']").value="bala"
+    Execute Javascript  document.querySelector("[id='email']").value="bala";
 #
-#    ${ele}      Get WebElement    //*[@id='pass']
-#    Execute JavaScript      arguments[0].value="bala123"   ARGUMENTS        ${ele}
+    ${ele}      Get WebElement    //*[@id='pass']
+    Execute JavaScript      arguments[0].value="bala123"   ARGUMENTS        ${ele}
 #
     ${ele}      Get WebElement    //*[@id='send2']
-    Execute JavaScript      arguments[0].click()   ARGUMENTS        ${ele}
+     Execute JavaScript      arguments[0].click();   ARGUMENTS        ${ele}
+
+#    Execute JavaScript      arguments[0].click();arguments[1].click();   ARGUMENTS        ${ele}        ${ele}
 #
 #TC1
 #    Append To Environment Variable    Path      ${EXECDIR}${/}driver
@@ -67,12 +69,18 @@ TC3
     Input Text    id=reg_email    king
 #    Click Element    name=register
 
-    ${title}    Execute Javascript      return document.title
+    ${title}    Execute Javascript      return document.Title
     Log To Console    ${title}
+
+    ${msg}    Execute Javascript      return document.querySelector("[id='reg_email'].validationMessage
+    Log To Console    ${msg}
 
     ${val}   Execute Javascript      return document.querySelectorAll("[id='reg_email']")[0].validationMessage
     Log To Console    ${val}
     Should Contain    ${val}    'king' is missing an '@'
+
+    ${ele}      Get WebElement    //*[@id='reg_email']
+    Execute JavaScript      return arguments[0].validationMessage   ARGUMENTS        ${ele}
     
     
 Login
