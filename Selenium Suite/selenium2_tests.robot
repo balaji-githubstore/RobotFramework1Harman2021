@@ -2,6 +2,7 @@
 Library     OperatingSystem
 Library     SeleniumLibrary
 Library    String
+Library    DebugLibrary
 
 *** Test Cases ***
 TC1
@@ -115,3 +116,15 @@ TC5
     Table Row Should Contain    xpath=//table[@id='example']    3    London
 #    Click Element    month
 #    Click Element    april
+
+TC6
+    Append To Environment Variable    Path      ${EXECDIR}${/}driver
+    Open Browser    browser=gc
+    Maximize Browser Window
+    Set Selenium Implicit Wait    30s
+    Go To    https://google.com
+#    Debug
+    ${title}    Get Title
+    Log To Console    ${title}
+    Go Back
+    

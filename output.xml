@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.4 on win32)" generated="20210713 12:58:39.353" rpa="false" schemaversion="2">
-<suite id="s1" name="Email Tests" source="D:\B-Mine\Company\Company\Harman2\RobotProject\RPFFramework\email_tests.robot">
-<test id="s1-t1" name="Sending HTML Email With Image">
-<kw name="Authorize" library="RPA.Email.ImapSmtp">
-<arg>account=shinebrightanytime@gmail.com</arg>
-<arg>password=balaji@12345</arg>
-<arg>smtp_server=smtp.gmail.com</arg>
-<arg>smtp_port=587</arg>
-<arg>imap_server=imap.gmail.com</arg>
-<arg>imap_port=993</arg>
-<doc>Authorize user to SMTP and IMAP servers.</doc>
-<msg timestamp="20210713 12:58:39.443" level="INFO">Protecting keyword: RPA.Email.ImapSmtp.Authorize</msg>
-<msg timestamp="20210713 12:58:43.059" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20210713 12:58:39.443" endtime="20210713 12:58:43.059"/>
+<robot generator="Robot 4.0.3 (Python 3.9.4 on win32)" generated="20210713 14:22:49.465" rpa="false" schemaversion="2">
+<suite id="s1" name="Excel Tests" source="D:\B-Mine\Company\Company\Harman2\RobotProject\RPFFramework\excel_tests.robot">
+<test id="s1-t1" name="TC4">
+<kw name="Open Workbook" library="RPA.Excel.Files">
+<arg>C:\\Users\\JiDi\\Desktop\\EMRData.xlsx</arg>
+<doc>Open an existing Excel workbook.</doc>
+<msg timestamp="20210713 14:22:50.064" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x0000018FA711B580&gt;</msg>
+<status status="PASS" starttime="20210713 14:22:50.055" endtime="20210713 14:22:50.064"/>
 </kw>
-<kw name="Send Message" library="RPA.Email.ImapSmtp">
-<arg>sender=shinebrightanytime@gmail.com</arg>
-<arg>recipients=balaji0017@gmail.com</arg>
-<arg>subject=HTML email with body images (2) plus one attachment</arg>
-<arg>body=${EMAIL_BODY}</arg>
-<arg>html=${TRUE}</arg>
-<arg>images=${BODY_IMG1}, ${BODY_IMG2}</arg>
-<arg>attachments=${attachment}</arg>
-<doc>Send SMTP email</doc>
-<status status="PASS" starttime="20210713 12:58:43.060" endtime="20210713 12:58:51.915"/>
+<kw name="Read Worksheet" library="RPA.Excel.Files">
+<var>${sheet}</var>
+<arg>InvalidCredentialTest</arg>
+<doc>Read the content of a worksheet into a list of dictionaries.</doc>
+<msg timestamp="20210713 14:22:50.065" level="INFO">${sheet} = [{'A': 'Username', 'B': 'Password', 'C': 'Language', 'D': 'ExpectedValue'}, {'A': 'Gha', 'B': 'bala123', 'C': 'English (Indian)', 'D': 'Invalid username or password'}, {'A': 'jack', 'B': 'jack123', 'C...</msg>
+<status status="PASS" starttime="20210713 14:22:50.064" endtime="20210713 14:22:50.065"/>
 </kw>
-<doc>Sending email with HTML content and attachment</doc>
-<status status="PASS" starttime="20210713 12:58:39.442" endtime="20210713 12:58:51.916"/>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>1</arg>
+<arg>Balaji</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20210713 14:22:50.065" endtime="20210713 14:22:50.065"/>
+</kw>
+<kw name="Save Workbook" library="RPA.Excel.Files">
+<doc>Save the active workbook.</doc>
+<status status="PASS" starttime="20210713 14:22:50.066" endtime="20210713 14:22:50.223"/>
+</kw>
+<kw name="Close Workbook" library="RPA.Excel.Files">
+<doc>Close the active workbook.</doc>
+<msg timestamp="20210713 14:22:50.224" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x0000018FA711B580&gt;</msg>
+<status status="PASS" starttime="20210713 14:22:50.224" endtime="20210713 14:22:50.224"/>
+</kw>
+<status status="PASS" starttime="20210713 14:22:50.054" endtime="20210713 14:22:50.224"/>
 </test>
-<status status="PASS" starttime="20210713 12:58:39.355" endtime="20210713 12:58:51.917"/>
+<status status="PASS" starttime="20210713 14:22:49.467" endtime="20210713 14:22:50.226"/>
 </suite>
 <statistics>
 <total>
@@ -37,7 +43,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Email Tests">Email Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Excel Tests">Excel Tests</stat>
 </suite>
 </statistics>
 <errors>
