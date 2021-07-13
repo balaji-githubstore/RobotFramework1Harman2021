@@ -4,6 +4,30 @@ Library     String
 
 
 *** Test Cases ***
+TC4
+    Set Local Variable    ${val1}    bala
+    Set Local Variable    ${val2}    john
+
+    ${val1}     Replace String    ${val1}    $    ${EMPTY}
+
+
+    ${to} =	Format String	To: {} <{}>	    ${val1}     ${val2}
+    Log To Console    ${to}
+
+    ${to} =	Format String	<{}-{}>	    ${val1}     ${val2}
+    ${to} =	Format String	{}	    ${val1}     ${val2}
+    Log To Console    ${to}
+
+TC3
+    Set Local Variable    ${val}    $120,000,000
+    ${val}  Remove String    ${val}     $       ,
+    Log To Console    ${val}
+    ${val}  Convert To Number    ${val}
+   ${val}    Evaluate    ${val}+${val}
+   Log To Console    ${val}
+   
+
+
 TC1
     FOR    ${i}    IN RANGE    1    11
         Log To Console    ${i}
@@ -32,3 +56,4 @@ TC2
     FOR    ${i}    IN RANGE    1    ${text}+1
         Log To Console    ${i}
     END
+

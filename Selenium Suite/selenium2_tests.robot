@@ -8,7 +8,7 @@ TC1
     Append To Environment Variable    Path      ${EXECDIR}${/}driver
     Open Browser    browser=gc
     Maximize Browser Window
-    Go To    http://demo.openemr.io/b/openemr/interface/login/login.php?site=default
+    Go To    https://account.magento.com/customer/account/login
     Set Selenium Implicit Wait    30s
     ${att}      Get Element Attribute    id=authUser    placeholder
     Log To Console    ${att}
