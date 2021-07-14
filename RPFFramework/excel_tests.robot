@@ -1,7 +1,6 @@
 *** Settings ***
 Library     RPA.Excel.Files
 
-
 *** Test Cases ***
 TC1
     Open Workbook    C:\\Users\\JiDi\\Desktop\\EMRData.xlsx
